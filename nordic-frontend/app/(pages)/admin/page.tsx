@@ -37,6 +37,7 @@ export default async function Page(props: { searchParams?: Promise<{ page?: stri
                 </div>     
             </div>
             <ul className="admin-list" role="list">
+            { productsDTO.length?
                 <li 
                     className="admin-list-item" 
                     style={{borderBottom: "1px solid #f1f1f1", marginBottom: "0px"}}
@@ -49,6 +50,8 @@ export default async function Page(props: { searchParams?: Promise<{ page?: stri
                     <span>Price</span>
                     <span>Qty</span>
                 </li>
+                : <></>
+            }
             {
                 productsDTO.map(({ name, id, price, availability, slug, images, category }) => {
                     const src = HREF + "thumbnails/" + category + "/" + encodeURIComponent(images[0]); 

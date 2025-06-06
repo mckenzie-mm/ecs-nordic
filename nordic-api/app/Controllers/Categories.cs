@@ -13,8 +13,21 @@ namespace webapi.Controllers
         [HttpGet]
         public async Task<IEnumerable<Category>> Get()
         {
-            var categories = await _categoriesService.Get();
-            return categories;
+            try
+            {
+                var categories = await _categoriesService.Get();
+                if (categories == (IEnumerable<Categories>)[])
+                {
+                    return [];
+                }
+                return categories;
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine("categories route");
+                Console.WriteLine(ex);
+                return [];
+            }
         }
     }
 }
