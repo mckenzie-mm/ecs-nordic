@@ -1,0 +1,177 @@
+.admin {
+    background-color: #eee;
+}
+
+/* Header */
+.admin-header-title {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #282828;
+    font-weight: 700;
+}
+
+.admin-header-nav {
+    display: flex;
+}
+
+.admin-header-wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;;
+    padding-top: 20px;
+}
+
+
+/* List */
+.admin-list {
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 50px;
+}
+
+li.admin-list-item {
+    padding: 15px;
+    display: grid;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #444;
+    grid-template-columns: 50px 120px 1fr 1fr 1fr 100px 100px 180px;
+    row-gap: 20px;
+    border: 1px solid #bbb;
+    background-color: #eee;
+    border-bottom: 0;
+}
+
+.admin-list li:first-child {
+    font-weight: bold;
+    font-size: 16px;
+    color: #222;
+}
+
+.admin-list li:last-child {
+    border-bottom: 1px solid #bbb;
+}
+
+.admin-list-img {
+    width: 80px;
+    border: 2px solid #444;
+}
+
+.admin-list-img-wrap {
+    width: 80px;
+    /* aspect-ratio: 350 / 435; */
+    overflow: hidden;
+}
+
+
+
+/* Edit and Delete btns */
+
+.admin-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.admin-delete-btn svg,
+.admin-edit-btn svg {
+    background-color: #fff;
+    fill: #999;
+    height: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-delete-btn svg { fill: #888; }
+
+.admin-edit-btn svg { fill: #999; }
+
+.admin-delete-btn,
+.admin-edit-btn {
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.admin-edit-btn:hover,
+.admin-delete-btn:hover {
+    cursor: pointer;
+    opacity: .82;
+}
+
+/* header button for creating item */
+
+.admin-create-btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 5px;
+    text-decoration: none;
+    line-height: 16px;
+    font-family: sans-serif;
+    background: #5e6872;
+    border: 1px solid #555;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.admin-create-btn-wrap:hover {
+    opacity: .82;
+    cursor: pointer;
+}
+
+.admin-create-btn-icon {
+    fill: #f7f7f7;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-create-btn-txt {
+    margin-left: 2px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.admin-reset-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 2px;
+    text-decoration: none;
+    line-height: 16px;
+    font-family: sans-serif;
+    background: #e23923;
+    border: 1px solid #555;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.admin-reset-btn:hover {
+    cursor: pointer;
+}

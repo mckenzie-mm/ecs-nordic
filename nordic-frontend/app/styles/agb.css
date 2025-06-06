@@ -1,0 +1,37 @@
+
+.agb {
+    padding-top: 47px;
+    padding-bottom: 42px;
+}
+
+.agb-wrap {
+    margin-left: 8.33333333%;
+    width: 83.33333333%;
+}
+
+.agb-title {
+    font-family: "prestige-elite-std", sans-serif;
+    font-size: 28px;
+    color: #282828;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.agb-paragraph-heading {
+    font-family: "prestige-elite-std", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #282828;
+}
+
+.agb-paragraph {
+    font-family: "prestige-elite-std", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #000000;
+}
+

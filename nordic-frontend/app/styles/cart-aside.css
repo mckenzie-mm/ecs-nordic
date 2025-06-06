@@ -1,0 +1,262 @@
+#cart-aside {
+    right: -410px;;
+}
+
+
+.cart-aside-wrap {
+    font-family:  "prestige-elite-std", serif;
+    font-weight: 700;
+    height: 100%;
+    width: 410px;
+    position: fixed;
+    z-index: 1004;
+    top: 0;
+    right: 0;
+    background: #333;
+    /* background: white; */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+    padding-inline: 35px;
+}
+
+.cart-aside-header  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    padding-inline: 35px;
+    width: 100%;
+}
+.cart-aside-header-wrap {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    border-bottom: 1px solid #555;
+}
+
+.cart-aside-close-btn {
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    cursor: pointer;
+    padding-inline: 6px;
+    background: #333;
+    color: #eee;
+}
+
+.cart-aside-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-inline: 35px;
+    padding-bottom: 45px;
+    width: 100%;
+}
+.cart-aside-continue-btn,
+.cart-aside-checkout-btn {
+    border: 1px solid #777;
+    padding: 0;
+    margin: 0;
+    line-height: 42px;
+    cursor: pointer;
+    height: 42px;
+    width: 100%;
+    background: #333;
+    color: #eee;
+}
+
+.cart-aside-checkout-btn {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 42px;
+    cursor: pointer;
+    height: 42px;
+    width: 100%;
+    background: #222;
+    color: #eee;
+}
+
+.cart-aside-continue-btn:hover,
+.cart-aside-checkout-btn:hover {
+    opacity: 0.82;
+}
+
+.cart-aside-empty {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.cart-aside-empty i {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 32px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    transform: translateY(6px);
+    transition: .3s;
+    background-color: #414141;
+}
+
+.cart-aside-notify {
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    color: #eee;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/**********************************/
+
+.cart-aside-item {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #555;
+}
+
+.cart-aside-item:last-child {
+    border-bottom: 0;
+}
+
+.cart-aside-item:first-child {
+    margin-top: 20px;
+}
+
+/***********************************/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    font-family:  "prestige-elite-std", serif;
+    color: #eee;
+    font-weight: 700;
+}
+  
+
+.col-img {
+    display: block; 
+    line-height: 1;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-2 {
+    padding-left: 15px;
+}
+
+.col-2 {
+    flex-grow: 1;
+    max-width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.col-2,
+.col-3 {
+    line-height: 1.5;
+}
+
+.col-3 {
+    width: 80px;  
+    text-align: right;
+    position: relative;
+}
+
+/* interior styling */
+.col-heading {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.col-qty {
+    font-weight: 400;
+    display: flex;
+}
+
+/* remove button */
+
+.nm-font-close2:before {
+    content: "\e117";
+    font-family: "cm-font" !important;
+}
+
+.remove-cart-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #999;
+    background: #333;
+    border: 0;
+}
+
+.remove-cart-btn:hover {
+    cursor: pointer;
+}
+
+/*************************/
+.cart-aside-summary {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1;
+    margin-top: 50px;
+}
+
+/*************************/
+
+.overflow {
+    white-space: nowrap; 
+    max-width: 230px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.cart-aside-checkout-btn,
+.cart-aside-continue-btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cart-aside-checkout-btn:hover,
+.cart-aside-continue-btn:hover {
+  cursor: pointer;
+  opacity: .82;
+}
+
+.cart-aside-checkout-btn {
+    margin-top: 15px;
+}
+
+.cart-aside-items {
+    overflow-y: scroll;
+    height: calc(100vh - 350px);
+    scrollbar-width: none; /* scroll possible with mouse wheel but hide scrollbar */
+}

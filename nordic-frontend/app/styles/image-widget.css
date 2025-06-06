@@ -1,0 +1,56 @@
+/******* Thumbnails **********/
+
+.thumbnail-list {
+  height: 520px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-sizing: border-box;
+  width: 82px;
+}
+
+.thumbnail-list li {
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: #aaa;
+}
+
+.thumbnail-list li:hover {
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.thumbnail-selected {
+  border: 2px solid blue;
+}
+
+.thumbnail-img {
+  max-width: 100%;
+}
+
+/******   Main Images  *******/
+
+.product-images {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+
+.product-img-rel {
+  position: relative;
+  width: 520px;
+  aspect-ratio: 1;
+  background-color: #aaa;
+}
+
+.product-img-abs {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.not-selected { display: none; }
+
+.selected { display: block; }

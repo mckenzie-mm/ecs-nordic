@@ -1,0 +1,40 @@
+
+.about-title {
+    padding-inline: 100px;
+    font-family: "prestige-elite-std", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #282828;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.about-grid {
+    padding-inline: 100px;
+    display: grid;
+    grid-template-columns: .3fr .7fr;
+    gap: 20px;
+}
+
+.about-caption {
+    font-family: "prestige-elite-std", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #282828;
+}
+
+.about-text p {
+    font-family: "prestige-elite-std", serif;
+    color: #282828;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    max-width: min(calc(100% - 20px), 1500px);
+    aspect-ratio: 32 / 13;
+    overflow: hidden;
+    margin-inline: auto;
+    position: relative;
+    margin-bottom: 45px;
+  }

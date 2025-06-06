@@ -1,0 +1,15 @@
+.category-header {
+    padding-top: 60px;
+    margin-bottom: 65px;
+    background: #fdfdfd;
+}
+
+.category-name {
+    text-align: center;
+    font-family:  "prestige-elite-std", serif;
+    color: #282828;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: capitalize;
+}

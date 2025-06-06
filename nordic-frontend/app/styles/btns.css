@@ -1,0 +1,131 @@
+/* Buttons */
+
+.btn-load {
+    display: block;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 72px;
+}
+  
+.btn-load a {
+    display: inline-block;
+    font-family:  "prestige-elite-std", serif;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 62px;
+    color: #282828;
+    width: 100%;
+    font-weight: 700;
+}
+  
+.btn-like:hover {
+    cursor: pointer;
+}
+  
+.btn-like {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 17px;
+    color: #424242;
+    width: 19px;
+    height: 17px;
+    border: none;
+    background-color: #fff;
+}
+  
+.btn-like:hover i:before {
+    content: "\f004";
+}
+  
+.btn-buy {
+    width: 100px; /* set a width so it doesnt change upon hover */
+    font-family:  "prestige-elite-std", serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #424242;
+    text-align: left;
+    border: 0;
+    background-color: #fff;
+}
+  
+.btn-buy:hover {
+    cursor: pointer;
+}
+  
+.btn-buy:hover span {
+    display:none;
+}
+  
+.btn-buy:hover:before {
+    content:"Buy Now";
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-next,
+.btn-prev {
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    text-align: left;
+    border: 0;
+}
+
+.flip {
+    display: inline-block;
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.btn-next:hover,
+.btn-prev:hover {
+    color: #282828;
+    cursor: pointer;
+}
+
+/****** Cart button */
+.cart-header-btn {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    border: 0;
+    background: #fff;
+}
+
+.cart-header-btn:hover {
+    opacity: .82;
+    cursor: pointer;
+}
+
+.cart-header-count {
+    font-family:  "prestige-elite-std", serif;
+    position: relative;
+    top: -7px;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+/******* Product Buy Now ***********/
+.product-buy-now {
+    font-family:  "prestige-elite-std", serif;
+    width: 100%;
+    padding: 14px;
+    color: #ffffff;
+    background-color: #282828;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    border: 0 none;
+    border-radius: 0;
+    text-align: center;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .product-buy-now:hover {
+    opacity: 0.82;
+  }
+  

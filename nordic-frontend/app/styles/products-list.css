@@ -1,0 +1,33 @@
+
+.products-list-btn {
+    font-family:  "prestige-elite-std", serif;
+    color: #282828;
+    font-weight: 700;
+    width: 100%;
+    min-height: 42px;
+    margin: 32px 0 72px;
+    line-height: 62px;
+    color: #282828;
+    border: 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+}
+
+.products-list-btn:hover {
+    cursor: pointer;
+}
+
+.products-list-notify {
+    font-family:  "prestige-elite-std", serif;
+    color: #282828;
+    font-weight: 700;
+    width: 100%;
+    min-height: 42px;
+    margin: 32px 0 72px;
+    line-height: 62px;
+    color: #282828;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+}

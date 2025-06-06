@@ -1,0 +1,64 @@
+/* Header Component */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .list-products,
+  .list-user {
+    display: flex;
+  }
+  
+  .list-products li a,
+  .list-user li a {
+    padding-inline: 16px; 
+    position: relative;
+  }
+  
+  .list-products a,
+  .list-user a {
+    display: inline-block;
+    font-family:  "prestige-elite-std", serif;
+    text-decoration: none;
+    color: #242424;
+    font-weight: normal;
+  }
+  
+  .list-user li:last-child a {
+    padding-right: 0px; 
+    position: relative;
+  }
+  
+  .placeholder {
+    height: 124px;
+  }
+  
+  header {
+    position: fixed;
+    top: 0; /* 12px; */
+    left: 0;
+    z-index: 1002;
+    line-height: 50px;
+    width: 100%;
+    background: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #fdfdfd;
+  }
+  
+  .img-brand {
+    height: 100px;
+    width: auto;
+    max-width: none;
+    max-width: 100%;
+    display: block;
+    filter: brightness(120%);
+  }
+  
+  
+
+  /* dropdown menu */
+
+  

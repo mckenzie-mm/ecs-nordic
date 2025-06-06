@@ -1,0 +1,33 @@
+
+.faq {
+    margin-top: 68px;
+}
+.faq-grid {
+    display: grid;
+    grid-template-columns: .25fr .33fr .42fr;
+    border-bottom: 1px solid #f1f1f1;
+    row-gap: 24px;
+    padding-bottom: 28px;
+    margin-bottom: 48px;
+}
+
+.faq-heading {
+    font-family: "prestige-elite-std", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #242424;
+}
+
+.faq-paragraph {
+    font-family: "prestige-elite-std", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #242424;
+}
+
+.faq-grid:last-child {
+    border: 0;
+}

@@ -1,0 +1,54 @@
+.contact-title {
+    padding-inline: 100px;
+    font-family: "prestige-elite-std", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #282828;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.contact-grid {
+    padding-inline: 100px;
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+    gap: 20px;
+}
+
+.contact-caption {
+    font-family: "prestige-elite-std", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #282828;
+}
+
+.contact-text p {
+    font-family: "prestige-elite-std", serif;
+    color: #282828;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.contact-container {
+    max-width: min(calc(100% - 20px), 1500px);
+    aspect-ratio: 32 / 13;
+    overflow: hidden;
+    margin-inline: auto;
+    position: relative;
+    margin-bottom: 45px;
+}
+.map-container {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin-bottom: 50px;
+    position: relative;
+}
+.map-img-wrap {
+    position: "relative";
+}
+.map-img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
