@@ -1,9 +1,9 @@
 "use server"
 
-const WEB_API_URL = "http://webapi:5000"; //process.env.WEB_API_URL;
+import { API_ENDPOINT } from "../config";
 
 export const findAll = async (currentPage: number, ITEMS_PER_PAGE: number) => {
-    const response = await fetch(`${WEB_API_URL}/products/list/${currentPage}/${ITEMS_PER_PAGE}`);
+    const response = await fetch(`${API_ENDPOINT}/products/list/${currentPage}/${ITEMS_PER_PAGE}`);
     const data = await response.json();
 
     // await new Promise((resolve) => setTimeout(resolve, 3000));
@@ -13,7 +13,7 @@ export const findAll = async (currentPage: number, ITEMS_PER_PAGE: number) => {
 
 
 export const findByCategory = async (category: string, currentPage: number, ITEMS_PER_PAGE: number) => {
-    const response = await fetch(`${WEB_API_URL}/products/list/${category}/${currentPage}/${ITEMS_PER_PAGE}`);
+    const response = await fetch(`${API_ENDPOINT}/products/list/${category}/${currentPage}/${ITEMS_PER_PAGE}`);
     const data = await response.json();
 
     // await new Promise((resolve) => setTimeout(resolve, 3000));
@@ -22,7 +22,7 @@ export const findByCategory = async (category: string, currentPage: number, ITEM
 }
 
 export const getProductPageData = async (slug : string) => {
-    const response = await fetch(`${WEB_API_URL}/products/page/${slug}`);
+    const response = await fetch(`${API_ENDPOINT}/products/page/${slug}`);
     const data = await response.json();
     return data;
 }
