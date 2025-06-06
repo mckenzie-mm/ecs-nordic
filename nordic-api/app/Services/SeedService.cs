@@ -5,7 +5,14 @@ using webapi.Domain;
 
 namespace webapi.Services;
 
-public class SeedService
+public interface ISeedService
+{
+    Task DeleteFile();
+    Task Initialise();
+    Task Seed();
+}
+
+public class SeedService : ISeedService
 {
     private readonly string _connectionString;
     public SeedService(string DB_CONNECTION_STRING)
@@ -31,7 +38,7 @@ public class SeedService
     public async Task Initialise()
     {
         Console.WriteLine("called init");
-        
+
         await CreateTable(@"
                     CREATE TABLE categories (
                         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -68,7 +75,7 @@ public class SeedService
             Console.WriteLine(ex.Message);
         }
     }
-    private async Task SeedCategories() 
+    private async Task SeedCategories()
     {
         var sql = "INSERT INTO categories (id, name) VALUES (@id, @name)";
         try
@@ -93,7 +100,7 @@ public class SeedService
         }
     }
 
-    private async Task SeedProducts() 
+    private async Task SeedProducts()
     {
         var sql = @"INSERT INTO products 
                 (id,
