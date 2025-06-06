@@ -25,9 +25,8 @@ public class CategoriesService
             return res;
 
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return [];
         }
     }

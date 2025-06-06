@@ -120,11 +120,9 @@ public class ProductsService
 
             var res = await connection.QueryAsync<Product>(sql);
             return res;
-
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return [];
         }
     }
@@ -140,9 +138,8 @@ public class ProductsService
             var res = await connection.QueryFirstOrDefaultAsync<Product>(sql, new { name });
             return res;
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return null;
         }
     }
@@ -158,9 +155,8 @@ public class ProductsService
             var res = await connection.QueryFirstOrDefaultAsync<Product>(sql, new { slug });
             return res;
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return null;
         }
     }
@@ -178,9 +174,8 @@ public class ProductsService
             return res;
 
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return null;
         }
     }
@@ -201,9 +196,8 @@ public class ProductsService
             return res;
 
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return [];
         }
     }
@@ -223,9 +217,8 @@ public class ProductsService
             return res;
 
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return [];
         }
     }
@@ -242,9 +235,8 @@ public class ProductsService
             var res = await connection.QueryAsync<Product>(sql, new { category, id, LIMIT = 4 });
             return res;
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return [];
         }
     }
@@ -260,9 +252,8 @@ public class ProductsService
             int count = (int)(long)await command.ExecuteScalarAsync();
             return count;
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return -1;
         }
     }
@@ -283,9 +274,8 @@ public class ProductsService
             var rowDeleted = await command.ExecuteNonQueryAsync();
             return rowDeleted;
         }
-        catch (SqliteException ex)
+        catch (SqliteException)
         {
-            Console.WriteLine(ex.Message);
             return -1;
         }
     }
