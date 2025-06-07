@@ -25,6 +25,6 @@ of the static pages. Nextjs will use ".env.production.local"
 first by default with HOST=local.
 
 During running of the container on the docker host 
-Nextjs will use the bridge network
+Nextjs will use the bridge network.
 The env is required to be production (NODE_ENV=production)
-with HOST=webapi (the network alias of the dotnet container)
+with HOST=webapi (the network alias of the dotnet container).
