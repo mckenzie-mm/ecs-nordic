@@ -47,6 +47,7 @@ export async function getCount(ITEMS_PER_PAGE: number) {
 export async function reset() {
     await fetch(`${API_ENDPOINT}/seed`);
     revalidatePath('/admin');
+    revalidatePath('/');
     redirect('/admin');
 }
 
