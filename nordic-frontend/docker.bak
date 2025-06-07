@@ -1,10 +1,10 @@
-# Use minimal Node image 
-FROM node:18-alpine AS base 
-WORKDIR /app 
+# Based on docker blog for dockerizing a React app
+# https://www.docker.com/blog/how-to-dockerize-react-app/
 
-# Install pnpm 
-RUN npm install -g pnpm 
-
+FROM node:18
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
 COPY . .
 EXPOSE 3000
 # RUN npm run build;

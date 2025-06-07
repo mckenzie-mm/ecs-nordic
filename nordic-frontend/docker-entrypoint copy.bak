@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Build the Next site including SSG
-pnpm build 
+npm run build
 
 # Start the production server
-pnpm run start
+npm run start
 
-
+# npm run dev
