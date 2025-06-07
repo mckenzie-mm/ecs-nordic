@@ -39,9 +39,15 @@ export async function deleteProduct(id: number) {
 }
 
 export async function getCount(ITEMS_PER_PAGE: number) {
-    const response = await fetch(`${API_ENDPOINT}/admin/count`);
-    const count = await response.json();
-    return  Math.ceil(Number(count) / ITEMS_PER_PAGE);
+    try {
+        const response = await fetch(`${API_ENDPOINT}/admin/count`);
+        const count = await response.json();
+        return  Math.ceil(Number(count) / ITEMS_PER_PAGE);
+    } catch (error) {
+        console.log(error)
+        return 0;
+    }
+    
 }
 
 export async function reset() {

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# Build the Next site including SSG
-pnpm build 
-
-# Start the production server
-pnpm run start
-
-

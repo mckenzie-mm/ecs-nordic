@@ -5,11 +5,21 @@ WORKDIR /app
 # Install pnpm 
 RUN npm install -g pnpm 
 
-COPY . .
-EXPOSE 3000
-# RUN npm run build;
-# CMD ["npm", "start"]
+# Install deps and build 
+FROM base AS builder 
+COPY . . 
+RUN pnpm install 
+RUN pnpm build 
 
-COPY docker-entrypoint.sh /
-RUN chmod +x /docker-entrypoint.sh
-ENTRYPOINT ["/bin/sh", "/docker-entrypoint.sh"]
+# Final image 
+FROM node:18-alpine AS runner 
+
+WORKDIR /app 
+
+# Copy standalone build output 
+COPY --from=builder /app/.next/standalone ./ 
+COPY --from=builder /app/public ./public 
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+EXPOSE 3000 
+CMD ["node", "server.js"]
